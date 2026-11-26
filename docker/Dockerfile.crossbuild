@@ -87,7 +87,7 @@ RUN set -eux; \
     if [ "${MODE}" = "onnx" ]; then \
         if [ "${TARGET_ARCH}" = "aarch64" ]; then ort_arch="aarch64"; else ort_arch="x64"; fi; \
         tarball="onnxruntime-linux-${ort_arch}-${ONNXRUNTIME_VERSION}.tgz"; \
-        url="https://github.com/microsoft/onnxruntime/releases/download/v${ONNXRUNTIME_VERSION}/${tarball}"; \
+        url="https://huggingface.co/csukuangfj/onnxruntime-libs/resolve/bd39a158faaced29a9cafb1ad5480e1d91eab1c6/${tarball}"; \
         echo "Downloading ONNX Runtime: ${url}"; \
         wget -q "${url}" -O "/tmp/${tarball}"; \
         mkdir -p /opt/onnxruntime; \

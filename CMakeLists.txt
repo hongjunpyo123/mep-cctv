@@ -291,7 +291,7 @@ elseif(CCTV_MODE STREQUAL "onnx")
     endif()
 
     set(ONNXRUNTIME_URL
-      "https://github.com/microsoft/onnxruntime/releases/download/v${ONNXRUNTIME_VERSION}/onnxruntime-linux-${ONNXRUNTIME_ARCH}-${ONNXRUNTIME_VERSION}.tgz")
+      "https://huggingface.co/csukuangfj/onnxruntime-libs/resolve/bd39a158faaced29a9cafb1ad5480e1d91eab1c6/onnxruntime-linux-${ONNXRUNTIME_ARCH}-${ONNXRUNTIME_VERSION}.tgz")
     FetchContent_Declare(onnxruntime
       URL "${ONNXRUNTIME_URL}"
       URL_HASH "SHA256=${ONNXRUNTIME_SHA256}"
